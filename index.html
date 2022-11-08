@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Script JS -->
+  <script src="./js/script.js" type="module" defer></script>
+  <!-- Link Font Awson -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <title>Lista de tarefas</title>
+</head>
+<body>
+  <main class="container">
+    <div class="todoContainer">
+      <header>
+        <h1>Lista de tarefas</h1>
+      </header>
+      <form id="todoForm">
+        <p>Adicione a sua tarefa:</p>
+        <div class="formControl">
+          <input type="text" id="todoInput" placeholder="O que você vai fazer?">
+          <button type="submit">
+            <i class="fa-thin fa-plus"></i>
+          </button>
+        </div>
+      </form>
+      <form id="editForm" class="hide">
+        <p>Edite a sua tarefa:</p>
+        <div class="formControl">
+          <input type="text" id="editInput">
+          <button>
+            <i class="fa-solid fa-check-double"></i>
+          </button>
+        </div>
+        <button type="submit" id="cancelEditBtn">Cancelar</button>
+      </form>
+      <div id="toolbar">
+        <div id="search">
+          <h4>Pesquisar:</h4>
+          <form>
+            <input type="text" id="searchInput" placeholder="Buscar..">
+            <button id="eraseBtn">
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+          </form>
+        </div>
+        <div id="filter">
+          <h4>Filtrar:</h4>
+          <select id="filterSelect">
+            <option value="all">Todos</option>
+            <option value="done">Feitos</option>
+            <option value="todo">A fazer</option>
+          </select>
+        </div>
+      </div>
+      <div id="todoList">
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h2>&copy; Elyas Rodrigues</h2>
+    <h3>2022</h3>
+  </footer>
+</body>
+</html>
